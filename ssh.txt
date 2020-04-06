@@ -1,0 +1,11 @@
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	> Generating public/private rsa key pair.
+	> Enter a file in which to save the key (/c/Users/you/.ssh/id_rsa):[Press enter]
+	>Enter passphrase (empty for no passphrase): [Type a passphrase]
+	> Enter same passphrase again: [Type passphrase again]
+$ eval $(ssh-agent -s)
+	> Agent pid 59566
+$ ssh-add ~/.ssh/id_rsa 
+	> enter password again
+$ ssh-add ~/.ssh/id_rsa.pub
+	-> to copy all ssh file for github. 
